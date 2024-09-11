@@ -62,14 +62,6 @@
                 <h3><?php echo esc_html(get_field('target-title')); ?></h3>
                 <p><?php echo esc_html(get_field('target-text')); ?></p>
             </div>
-            <div class="target">
-                <h3><?php echo esc_html(get_field('target-title')); ?></h3>
-                <p><?php echo esc_html(get_field('target-text')); ?></p>
-            </div>
-            <div class="target">
-                <h3><?php echo esc_html(get_field('target-title')); ?></h3>
-                <p><?php echo esc_html(get_field('target-text')); ?></p>
-            </div>
         </div>
         <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
