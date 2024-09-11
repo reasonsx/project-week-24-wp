@@ -201,6 +201,8 @@ ul {
 .main-targets-container {
     /* display: grid; */
     /* grid-template-columns: repeat(3, 1fr); Default 3 equal columns */
+    display: flex;
+    justify-content: space-between;
     grid-gap: 16px;
     width: 1160px;
     margin: 0 auto;
