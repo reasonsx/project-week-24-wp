@@ -10,7 +10,7 @@
                 <li><a href="#newsletter">Newsletter</a></li>
             </ul>
             <div class="languages">
-                <div class="language"></div>
+                <div class="language"><img src="<?php echo get_template_directory_uri(); ?>/css/img/uk-flag.svg" alt=""></div>
                 <div class="language"></div>
             </div>
         </nav>
