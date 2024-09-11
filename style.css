@@ -199,14 +199,13 @@ ul {
 } */
 
 .main-targets-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* Allows wrapping if the content exceeds width */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default 3 equal columns */
+    grid-gap: 16px;
     width: 1160px;
-    height: 600px;
     margin: 0 auto;
-    margin-top: 20px;
     transition: all 0.3s ease;
+    margin-top: 20px;
 }
 
 .target {
@@ -215,15 +214,14 @@ ul {
     flex-direction: column;
     background-color: var(--primary-color);
     border-radius: var(--primary-border-radius);
+    justify-content: center;
+    padding: 24px;
     justify-content: flex-end;
     align-items: flex-start;
     box-sizing: border-box;
-    padding: 24px;
+    background: url('img/hero-image.jpg');
     height: 572px; /* Fixed height */
-    width: 376px; /* Fixed width */
     transition: width 0.3s ease;
-    flex: 1; /* Adjust to control the flex-grow behavior */
-    max-width: calc(100% / 3); /* Ensures that each target can take up a third of the space */
 }
 
 /* Default width for target elements */
