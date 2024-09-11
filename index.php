@@ -40,7 +40,7 @@
                     <p><?php echo $aboutText ?></p>
                 </div>
                 <div class="about-pic2">
-                    <img src="<?php echo esc_url(get_field('about-image-3')["url"]); ?>" alt="" class="img3">
+                    <img src="<?php echo $aboutImage3 ?>" alt="" class="img3">
                     <img src="<?php echo esc_url(get_field('about-image-4')["url"]); ?>" alt="" class="img4">
                 </div>
 
