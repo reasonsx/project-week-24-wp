@@ -70,13 +70,13 @@
         <h2>Things to do</h2>
         <div class="things-to-do-container">
         <?php
-        $cards = new WP_Query(array(
-            'post_type' => 'card',
-            'posts_per_page' => 3  
+        $tips = new WP_Query(array(
+            'post_type' => 'tip',
+            'posts_per_page' => 5  
         )); ?>
 
-        <?php if ($cards->have_posts()) : ?>
-            <?php while ($cards->have_posts()) : $cards->the_post(); ?>
+        <?php if ($tips->have_posts()) : ?>
+            <?php while ($tips->have_posts()) : $tips->the_post(); ?>
             <div class="to-do">
                 <div class="circle">
                     <span class="number"><?php echo esc_html(get_field('tip-number')); ?></span>
