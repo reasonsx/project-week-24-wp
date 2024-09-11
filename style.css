@@ -117,9 +117,9 @@ ul {
     background-color: var(--white-color);
     overflow: hidden;
 }
-.language:nth-child(1) img {
-    width: 100%; /* Ensures the image stretches across the container's width */
-  height: 300px; /* Sets a fixed height */
+.uk {
+  width: 100%; /* Ensures the image stretches across the container's width */
+  height: 100%; /* Sets a fixed height */
   object-fit: cover; /* Ensures the image covers the container area */
   object-position: center; /* Centers the image within its container */
 
