@@ -19,6 +19,7 @@
     </div>
     <div class="hero-section">
         <h1><?php echo $heroText ?></h1>
+        <img src="<?php echo esc_url(get_field('hero-image')["url"]); ?>" alt="">
 
     </div>
     <section id="about">
