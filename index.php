@@ -51,21 +51,19 @@
     <div class="main-targets-section">
         <h2>Most crucial targets</h2>
         <div class="main-targets-container">
-        <?php
-        $cards = new WP_Query(array(
-            'post_type' => 'card',
-            'posts_per_page' => 3  
-        )); ?>
-        <?php if ($cards->have_posts()) : ?>
-            <?php while ($cards->have_posts()) : $cards->the_post(); ?>
             <div class="target">
-                <h3><?php echo esc_html(get_field('target-title')); ?></h3>
-                <p><?php echo esc_html(get_field('target-text')); ?></p>
+                <h3><?php echo esc_html(get_field('target-title-1')); ?></h3>
+                <p><?php echo esc_html(get_field('target-text-1')); ?></p>
+            </div>
+            <div class="target">
+                <h3><?php echo esc_html(get_field('target-title-2')); ?></h3>
+                <p><?php echo esc_html(get_field('target-text-2')); ?></p>
+            </div>
+            <div class="target">
+                <h3><?php echo esc_html(get_field('target-title-3')); ?></h3>
+                <p><?php echo esc_html(get_field('target-text-3')); ?></p>
             </div>
         </div>
-        <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
-        <?php endif; ?>
     </div>
 
     <div class="things-to-do-section">
