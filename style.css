@@ -129,26 +129,25 @@ ul {
 .hero-section {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center text vertically */
-    align-items: center; /* Center text horizontally */
+    justify-content: space-between;
     width: 100%;
     height: 960px;
     margin: 0 auto;
-    position: relative; /* Position relative to allow absolute positioning of the image */
+    align-items: center;
+    justify-content: center;
+    /* background: url('img/hero-image.jpg'); */
+    background-image: url('<?php echo esc_url(get_field('hero-image')["url"]); ?>');
     color: var(--white-color);
     font-size: 60px;
-    text-align: center;
-    overflow: hidden; /* Hide any overflow from the image */
 }
 
-.hero-section .hero-image {
-    position: absolute; /* Position image absolutely within the section */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the section without stretching */
-    z-index: -1; /* Places the image behind the text */
+.hero-container {
+    display: flex;
+    width: 1160px;
+    height: 572px;
+    background-color: var(--primary-color);
+    border-radius: var(--primary-border-radius);
+
 }
 
 .main-targets-section {
