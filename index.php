@@ -105,29 +105,26 @@
 
     <div class="more-content-section">
         <h2>Actions & Initiatives</h2>
+        <?php
+        $cards = new WP_Query(array(
+            'post_type' => 'card',
+            'posts_per_page' => 5  
+        )); ?>
+
+        <?php if ($cards->have_posts()) : ?>
+            <?php while ($cards->have_posts()) : $cards->the_post(); ?>
         <div class="more-content-container">
             <div class="back-content-box">
                 <div class="front-content-box">
-                    <p>Sustainable Development Goal 14 focuses on conserving and sustainably using the oceans, seas, and
-                        marine resources for sustainable development. Our oceans cover over 70% of the Earth's surface,
-                        and they play a critical role in supporting life on our planet. From regulating climate to
-                        providing oxygen and food, the health of our oceans is directly linked to our own well-being.
-                        <br><br>
-                        Key Challenges
-                        Plastic Pollution: Every year, millions of tonnes of plastic enter the oceans, harming marine
-                        life and ecosystems. From large debris to microplastics, this pollution is pervasive and
-                        destructive. <br>
-                        Overfishing: Unsustainable fishing practices are depleting fish stocks and destroying marine
-                        habitats. Overfishing not only threatens the balance of marine life but also the livelihoods of
-                        communities that depend on fishing. <br>
-                        Climate Change: Rising sea temperatures, ocean acidification, and changes in ocean currents are
-                        profoundly impacting marine ecosystems. Coral bleaching, loss of biodiversity, and altered fish
-                        migration patterns are just a few examples of climate change's impact.
-                    </p>
+                    <h5><?php echo esc_html(get_field('card-title')); ?></h5>
+                    <p><?php echo esc_html(get_field('card-text')); ?></p>
                 </div>
             </div>
         </div>
-        <div class="more-content-container">
+        <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        <?php endif; ?>
+        <!-- <div class="more-content-container">
             <div class="back-content-box">
                 <div class="front-content-box">
                     <p>Individual Actions <br>
@@ -150,7 +147,7 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
     <section id="newsletter">
