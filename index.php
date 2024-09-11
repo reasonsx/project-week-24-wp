@@ -49,7 +49,7 @@
     </section>
 
     <div class="main-targets-section">
-        <h2>Most crucial targets</h2>
+        <h2><?php echo esc_html(get_field('target-title-main')); ?></h2>
         <div class="main-targets-container">
             <div class="target">
                 <h3><?php echo esc_html(get_field('target-title-1')); ?></h3>
