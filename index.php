@@ -69,48 +69,27 @@
     <div class="things-to-do-section">
         <h2>Things to do</h2>
         <div class="things-to-do-container">
+        <?php
+        $cards = new WP_Query(array(
+            'post_type' => 'card',
+            'posts_per_page' => 3  
+        )); ?>
+
+        <?php if ($cards->have_posts()) : ?>
+            <?php while ($cards->have_posts()) : $cards->the_post(); ?>
             <div class="to-do">
                 <div class="circle">
-                    <span class="number">1</span>
+                    <span class="number"><?php echo esc_html(get_field('tip-number')); ?></span>
                 </div>
                 <div class="to-do-text">
-                    <p>Buy local and certified fish. You can support small-scale producers by shopping in local markets
-                        and shops.</p>
+                    <p><?php echo esc_html(get_field('tip-text')); ?></p>
                 </div>
             </div>
-            <div class="to-do">
-                <div class="circle">
-                    <span class="number">2</span>
-                </div>
-                <div class="to-do-text">
-                    <p>Never buy bottled water – boil, filter, chlorine, rainwater, do what you can.</p>
-                </div>
-            </div>
-            <div class="to-do">
-                <div class="circle">
-                    <span class="number">3</span>
-                </div>
-                <div class="to-do-text">
-                    <p>Stop using plastic bags: Usage and wrong disposal of plastic is a major cause of marine
-                        pollution.</p>
-                </div>
-            </div>
-            <div class="to-do">
-                <div class="circle">
-                    <span class="number">4</span>
-                </div>
-                <div class="to-do-text">
-                    <p>Organize a cleanup project for rivers and oceans. Engage your whole community to clean up a local
-                        river, seaside or an ocean..</p>
-                </div>
-            </div>
-            <div class="to-do">
-                <div class="circle">
-                    <span class="number">5</span>
-                </div>
-                <div class="to-do-text">
-                    <p>Stay informed. Follow our social media!</p>
-                </div>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        <?php endif; ?>
+           
+
             </div>
 
         </div>
