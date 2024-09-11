@@ -203,6 +203,7 @@ ul {
     grid-template-columns: repeat(3, 1fr); /* Default 3 equal columns */
     grid-gap: 16px;
     width: 1160px;
+    height: 600px;
     margin: 0 auto;
     transition: all 0.3s ease;
     margin-top: 20px;
