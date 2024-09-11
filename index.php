@@ -24,7 +24,7 @@
             <h2>What is it about?</h2>
             <div class="about-container">
                 <div class="about-pic1">
-                    <img src="/css/img/pic.jpg" alt="" class="img1">
+                    <img src="<?php echo get_template_directory_uri(); ?>css/img/pic.jpg" alt="">
                     <img src="./css/img/pic2.jpg" alt="" class="img2">
                 </div>
                 <div class="about-text">
