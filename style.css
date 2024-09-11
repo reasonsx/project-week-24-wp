@@ -139,6 +139,7 @@ ul {
     /* background-image: url('<?php echo esc_url(get_field('hero-image')["url"]); ?>'); */
     color: var(--white-color);
     font-size: 60px;
+    object-fit: hidden;
 }
 .hero-section img {
     width: 100%;
