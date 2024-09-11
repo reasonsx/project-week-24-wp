@@ -56,7 +56,8 @@
             'post_type' => 'card',
             'posts_per_page' => 3  
         )); ?>
-        
+        <?php if ($cards->have_posts()) : ?>
+            <?php while ($cards->have_posts()) : $cards->the_post(); ?>
             <div class="target">
                 <h3>Reducing Marine Pollution</h3>
                 <p>This target focuses on preventing and significantly reducing marine pollution of all kinds,
@@ -77,6 +78,9 @@
                     security and economic growth for communities relying on the fishing industry.</p>
             </div>
         </div>
+        <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        <?php endif; ?>
     </div>
 
     <div class="things-to-do-section">
