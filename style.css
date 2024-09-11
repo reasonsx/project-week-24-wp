@@ -136,7 +136,7 @@ ul {
     align-items: center;
     justify-content: center;
     /* background: url('img/hero-image.jpg'); */
-    background-image: url('<?php echo esc_url(get_field('hero-image')["url"]); ?>');
+    /* background-image: url('<?php echo esc_url(get_field('hero-image')["url"]); ?>'); */
     color: var(--white-color);
     font-size: 60px;
 }
