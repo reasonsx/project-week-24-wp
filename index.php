@@ -51,21 +51,28 @@
     <div class="main-targets-section">
         <h2>Most crucial targets</h2>
         <div class="main-targets-container">
+        <?php
+        $cards = new WP_Query(array(
+            'post_type' => 'card',
+            'posts_per_page' => 3  
+        )); ?>
+         <?php if ($cards->have_posts()) : ?>
+            <?php while ($cards->have_posts()) : $cards->the_post(); ?>
             <div class="target">
-                <h3>Reducing Marine Pollution</h3>
+                <h3><?php echo esc_html(get_field('target-title')); ?></h3>
                 <p>This target focuses on preventing and significantly reducing marine pollution of all kinds,
                     specifically from land-based activities, including marine debris and nutrient pollution. By
                     addressing pollution, we protect marine life and ecosystems, contributing to healthier oceans and
                     human wellbeing.</p>
             </div>
             <div class="target">
-                <h3>Protecting Marine Ecosystems</h3>
+                <h3><?php echo esc_html(get_field('target-title')); ?></h3>
                 <p>Aimed at safeguarding fragile marine and coastal ecosystems, this target emphasizes the importance of
                     managing and protecting areas like coral reefs and mangroves. Healthy ecosystems are vital for
                     maintaining biodiversity and supporting livelihoods for millions dependent on marine resources.</p>
             </div>
             <div class="target">
-                <h3>Managing Fisheries Sustainably</h3>
+                <h3><?php echo esc_html(get_field('target-title')); ?></h3>
                 <p>Sustainable management of fisheries is crucial to preventing overfishing and restoring fish stocks to
                     sustainable levels. This target ensures that fish populations can replenish, supporting food
                     security and economic growth for communities relying on the fishing industry.</p>
