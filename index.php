@@ -1,6 +1,12 @@
 <?php get_header(); ?>
 <?php $heroImage= get_field('hero-image')?>
 <?php $heroText= get_field('hero-text')?>
+<?php $aboutTitle= get_field('about-title')?>
+<?php $aboutText= get_field('about-text')?>
+<?php $aboutImage1= get_field('about-image-1')?>
+<?php $aboutImage2= get_field('about-image-2')?>
+<?php $aboutImage3= get_field('about-image-3')?>
+<?php $aboutImage4= get_field('about-image-4')?>
 <div class="nav-section">
         <nav>
             <div class="logo">
@@ -19,22 +25,19 @@
     </div>
     <div class="hero-section">
         <h1><?php echo $heroText ?></h1>
-         <img src="<?php echo esc_url(get_field('hero-image')["url"]); ?>" alt="" class="hero-image">
+         <img src="<?php echo $heroImage ["url"]?>" alt="" class="hero-image">
 
     </div>
     <section id="about">
         <div class="about-section" id="about">
-            <h2>What is it about?</h2>
+            <h2><?php echo $aboutTitle ?></h2>
             <div class="about-container">
                 <div class="about-pic1">
-                    <img src="/css/img/pic.jpg" alt="" class="img1">
-                    <img src="./css/img/pic2.jpg" alt="" class="img2">
+                    <img src="<?php echo $aboutImage1 ["url"]?>" alt="" class="img1">
+                    <img src="<?php echo esc_url('about-image-2')["url"]; ?>" alt="" class="img2">
                 </div>
                 <div class="about-text">
-                    <p>Here is your gateway to understanding and supporting the United Nations Sustainable Development
-                        Goal 14: Life Below Water. Our oceans cover more than 70% of the Earth’s surface and are home to
-                        an astonishing variety of life, contributing greatly to the planet's biodiversity and the health
-                        of our global ecosystem.</p>
+                    <p><?php echo $aboutText ?></p>
                 </div>
                 <div class="about-pic2">
                     <img src="./css/img/pic3.jpg" alt="" class="img3">
