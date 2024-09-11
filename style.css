@@ -219,7 +219,7 @@ ul {
     justify-content: flex-end;
     align-items: flex-start;
     box-sizing: border-box;
-    background: url('img/hero-image.jpg');
+    /* background: url('img/hero-image.jpg'); */
     height: 572px; /* Fixed height */
     transition: width 0.3s ease;
 }
