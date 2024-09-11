@@ -54,7 +54,7 @@
         <?php
         $cards = new WP_Query(array(
             'post_type' => 'card',
-            'posts_per_page' => 1  
+            'posts_per_page' => 2  
         )); ?>
         <?php if ($cards->have_posts()) : ?>
             <?php while ($cards->have_posts()) : $cards->the_post(); ?>
