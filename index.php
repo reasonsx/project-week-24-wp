@@ -25,7 +25,7 @@
     </div>
     <div class="hero-section">
         <h1><?php echo $heroText ?></h1>
-         <img src="<?php echo $heroImage ["url"]?>" alt="" class="hero-image">
+         <img src="<?php echo esc_url(get_field('hero-image')["url"]); ?>" alt="" class="hero-image">
 
     </div>
     <section id="about">
@@ -33,8 +33,8 @@
             <h2><?php echo $aboutTitle ?></h2>
             <div class="about-container">
                 <div class="about-pic1">
-                    <img src="<?php echo $aboutImage1 ["url"]?>" alt="" class="img1">
-                    <img src="<?php echo esc_url('about-image-2')["url"]; ?>" alt="" class="img2">
+                    <img src="<?php echo esc_url(get_field('about-image-1')["url"]); ?>" alt="" class="img1">
+                    <img src="<?php echo esc_url(get_field('about-image-2')["url"]); ?>" alt="" class="img2">
                 </div>
                 <div class="about-text">
                     <p><?php echo $aboutText ?></p>
