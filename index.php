@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+<?php $heroImage= get_field('hero-image')?>
+<?php $heroText= get_field('hero-text')?>
 <div class="nav-section">
         <nav>
             <div class="logo">
@@ -16,7 +18,7 @@
         </nav>
     </div>
     <div class="hero-section">
-        <h1>LIFE BELOW WATER</h1>
+        <h1><?php echo $heroText ?></h1>
 
     </div>
     <section id="about">
