@@ -117,7 +117,12 @@ ul {
     background-color: var(--white-color);
     overflow: hidden;
 }
-.language:nth-child(1) {
+.language:nth-child(1) img {
+    width: 100%; /* Ensures the image stretches across the container's width */
+  height: 300px; /* Sets a fixed height */
+  object-fit: cover; /* Ensures the image covers the container area */
+  object-position: center; /* Centers the image within its container */
+
 }
 .language:nth-child(2) {
     background: url(/css/img/dk-flag.svg) lightgray 50% / cover no-repeat;
