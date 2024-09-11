@@ -200,7 +200,7 @@ ul {
 
 .main-targets-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default 3 equal columns */
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 16px;
     width: 1160px;
     height: 600px;
