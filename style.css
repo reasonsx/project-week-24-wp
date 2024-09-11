@@ -118,11 +118,10 @@ ul {
     overflow: hidden;
 }
 .uk {
-  width: 100%; /* Ensures the image stretches across the container's width */
-  height: 100%; /* Sets a fixed height */
-  object-fit: cover; /* Ensures the image covers the container area */
-  object-position: center; /* Centers the image within its container */
-
+    width: 100%; /* Ensures the image takes the full width of the container */
+    height: 100%; /* Ensures the image takes the full height of the container */
+    object-fit: contain; /* Resizes the image to fit within the container */
+    object-position: center; /* Centers the image within the container */
 }
 .language:nth-child(2) {
     background: url(/css/img/dk-flag.svg) lightgray 50% / cover no-repeat;
