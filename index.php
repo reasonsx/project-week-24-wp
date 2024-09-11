@@ -53,7 +53,7 @@
         <div class="main-targets-container">
         <?php
         $cards = new WP_Query(array(
-            'post_type' => 'card',
+            'post_type' => 'target',
             'posts_per_page' => 3  
         )); ?>
          <?php if ($cards->have_posts()) : ?>
