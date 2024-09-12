@@ -15,9 +15,9 @@
         </div>
         <ul class="nav-links">
         <?php pll_the_languages(); ?>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#"><?php pll_e("Home")?></a></li>
+            <li><a href="#about"><?php pll_e("About")?></a></li>
+            <li><a href="#contact"><?php pll_e("Contact")?></a></li>
         </ul>
         <div class="languages">
             <div class="language-uk"></div>
