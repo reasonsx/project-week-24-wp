@@ -5,3 +5,10 @@ function my_custom_theme_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'my_custom_theme_scripts');
+
+function plp_register_strings() {
+    pll_register_string("nav", "Home");
+    pll_register_string("nav", "About");
+    pll_register_string("nav", "Contact");
+}
+add_action("init", "plp_register_strings");
