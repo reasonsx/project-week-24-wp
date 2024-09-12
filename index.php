@@ -208,7 +208,6 @@
     flex-direction: column;
     justify-content: space-between;
     width: 572px;
-    margin: 0 auto 160px auto;
     padding: 16px;
 }
 .support-box {
