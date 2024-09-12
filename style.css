@@ -660,9 +660,12 @@ footer {
         font-size: 24px;
     }
     .hero-section{
-        font-size: 30px;
+        font-size: 20px;
     }
     p{
         font-size: 12px;
+    }
+    .about-container{
+        width: 400px;
     }
 }
