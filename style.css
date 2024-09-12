@@ -613,4 +613,9 @@ footer {
     .main-targets-container:hover .target:not(:hover) {
         width: 100%; /* Reduced width for non-hovered targets */
     }
+    
+    .target p {
+        font-size: 14px;
+    }
+    
 }
