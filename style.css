@@ -562,6 +562,9 @@ footer {
         font-size: 32px;
     }
     .hero-section{
-        font-size: 48px;
+        font-size: 44px;
+    }
+    p{
+        font-size: 14px;
     }
 }
