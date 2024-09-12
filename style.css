@@ -693,11 +693,11 @@ footer {
     }
     .more-content-container{
         width: 400px;
-        height: 300px;
+        height: auto;
     }
     .back-content-box{
         width: 400px;
-        height: 300px;
+        height: auto;
     }
 
 
