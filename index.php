@@ -20,8 +20,8 @@
             <li><a href="#contact"><?php pll_e("Contact")?></a></li>
         </ul>
         <div class="languages">
-            <div class="language-uk"></div>
-            <div class="language-dk"></div>
+            <!-- <div class="language-uk"></div>
+            <div class="language-dk"></div> -->
         </div>
     </nav>
 </div>
