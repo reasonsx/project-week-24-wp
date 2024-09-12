@@ -282,7 +282,7 @@ ul {
 .back-content-box {
     display: flex;
     flex-direction: column;
-    width: 600;
+    width: 600px;
     background-color: var(--primary-color);
     border-radius: var(--primary-border-radius);
     justify-content: center;
