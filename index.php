@@ -90,7 +90,7 @@
                         <span class="number"><?php echo esc_html(get_field('tip-number')); ?></span>
                     </div>
                     <div class="to-do-text">
-                        <p><?php echo esc_html(get_field('tip-text')["url"]); ?></p>
+                        <p><?php echo esc_html(get_field('tip-text')); ?></p>
                     </div>
                 </div>
             <?php endwhile; ?>
@@ -128,7 +128,7 @@
                         <h5><?php echo esc_html(get_field('card-title')); ?></h5>
                         <p><?php echo esc_html(get_field('card-text')); ?></p>
                     </div>
-                    <img src="<?php echo esc_html(get_field('card-image')); ?>" alt="">
+                    <img src="<?php echo esc_html(get_field('card-image')["url"]); ?>" alt="">
                 </div>
             </div>
         <?php endwhile; ?>
