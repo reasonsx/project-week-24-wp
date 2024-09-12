@@ -117,12 +117,12 @@ ul {
     background-color: var(--white-color);
     overflow: hidden;
 }
-.language:nth-child(1) {
+.language-uk {
     width: 32px;
     height: 32px;
     background: url(./css/img/uk-flag.svg) 50% / cover no-repeat;
 }
-.language:nth-child(2) {
+.language-dk {
     background: url(./css/img/dk-flag.svg) 50% / cover no-repeat;
 }
 .hero-section {

@@ -18,8 +18,8 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="languages">
-            <div class="language"></div>
-            <div class="language"></div>
+            <div class="language-uk"></div>
+            <div class="language-dk"></div>
         </div>
     </nav>
 </div>
