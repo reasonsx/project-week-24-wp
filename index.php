@@ -1,16 +1,16 @@
 <?php get_header(); ?>
 <?php $heroImage = get_field('hero-image') ?>
 <?php $heroText = get_field('hero-text') ?>
-<?php $aboutTitle = get_field('about-title') ?>
 <?php $aboutText = get_field('about-text') ?>
-<?php $aboutImage1 = get_field('about-image-1') ?>
-<?php $aboutImage2 = get_field('about-image-2') ?>
-<?php $aboutImage3 = get_field('about-image-3') ?>
-<?php $aboutImage4 = get_field('about-image-4') ?>
+<?php $aboutTitle = get_field('about-title') ?>
+<?php $targetsTitle = get_field('targets-title') ?>
+<?php $tipsTitle = get_field('tips-title') ?>
+<?php $cardsTitle = get_field('cards-title') ?>
+
 <div class="nav-section">
     <nav>
         <div class="logo">
-            <h4>Life Below Water</h4>
+            <h4><?php echo $heroText ?></h4>
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
@@ -50,7 +50,7 @@
 </section>
 
 <div class="main-targets-section">
-    <h2>TITLE HERE LATER!</h2>
+    <h2><?php echo $targetsTitle ?></h2>
     <div class="main-targets-container">
     <?php
         $targets = new WP_Query(array(
@@ -74,7 +74,7 @@
 </div>
 
 <div class="things-to-do-section">
-    <h2>Things to do</h2>
+    <h2><?php echo $tipsTitle ?></h2>
     <div class="things-to-do-container">
         <?php
         $tips = new WP_Query(array(
@@ -112,7 +112,7 @@
 </div>
 
 <div class="more-content-section">
-    <h2>Actions & Initiatives</h2>
+    <h2><?php echo $cardsTitle ?></h2>
     <?php
     $cards = new WP_Query(array(
         'post_type' => 'card',
