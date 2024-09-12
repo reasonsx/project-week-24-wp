@@ -50,7 +50,6 @@
 </section>
 
 <div class="main-targets-section">
-    <h2>TITLE HERE LATER!</h2>
     <div class="main-targets-container">
     <?php
         $targets = new WP_Query(array(
