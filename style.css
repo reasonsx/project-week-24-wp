@@ -687,4 +687,14 @@ footer {
     .main-targets-container{
         width: 400px;
     }
+
+    .things-to-do-container {
+        width: 400px;
+    }
+    .more-content-container{
+        width: 400px;
+    }
+    .back-content-box{
+        width: 400px;
+    }
 }
