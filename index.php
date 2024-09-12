@@ -90,7 +90,7 @@
                         <span class="number"><?php echo esc_html(get_field('tip-number')); ?></span>
                     </div>
                     <div class="to-do-text">
-                        <p><?php echo esc_html(get_field('tip-text')); ?></p>
+                        <p><?php echo esc_html(get_field('tip-text')["url"]); ?></p>
                     </div>
                 </div>
             <?php endwhile; ?>
