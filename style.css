@@ -632,5 +632,7 @@ footer {
     .more-content-container{
         width: 800px;
     }
-    
+    .back-content-box{
+        width: 800px;
+    }
 }
