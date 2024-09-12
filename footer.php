@@ -1,5 +1,6 @@
+<?php $footerText = get_field('footer-text') ?>
 <footer>
-        <p>© Life Below Water 2024</p>
+        <p>© <?php echo $footerText ?></p>
     </footer>
     <?php wp_footer(); ?>
 </body>
