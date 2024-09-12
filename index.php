@@ -167,9 +167,9 @@
             <p>Sign up to our newsletter and hear about the big ideas and new campaigns, taking place all around the
                 world, that are helping to drive progress towards the Global Goals.</p> -->
             <div class="support-container">
-            <h3>STAY UPDATED</h3>
-            <p>Sign up to our newsletter and hear about the big ideas and new campaigns, taking place all around the
-                world, that are helping to drive progress towards the Global Goals.</p>
+                <h3>STAY UPDATED</h3>
+                <p>Sign up to our newsletter and hear about the big ideas and new campaigns, taking place all around the
+                    world, that are helping to drive progress towards the Global Goals.</p>
                 <div class="support-box">
                     <?php echo do_shortcode('[contact-form-7 id="b2731b8" title="Newsletter"]') ?>
                 </div>
@@ -203,49 +203,5 @@
         height: 572px;
         transition: width 0.3s ease;
     }
-    .support-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 572px;
-    padding: 16px;
-}
-.support-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 572px;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 24px;
-}
-.support-box p {
-    height: auto;
-}
-input {
-    width: 100%;
-    padding: 8px;
-    border-radius: 8px;
-}
-textarea {
-    width: 100%;
-    padding: 8px;
-    border-radius: 8px;
-    resize: none;
-}
-.wpcf7-form-control-wrap {
-    border: none;
-}
-.wpcf7-submit {
-    display: block;
-    width: 278px;
-    border: none;
-    border-radius: 24px;
-    cursor: pointer;
-    margin: auto;
-}
-.support-box p:nth-child(6) {
-    height: 32px;
-}
 </style>
 <?php get_footer(); ?>
