@@ -174,7 +174,7 @@
                     <?php echo do_shortcode('[contact-form-7 id="b2731b8" title="Newsletter"]') ?>
                 </div>
             </div>
-            <button class="main-button">Subscribe</button>
+            <!-- <button class="main-button">Subscribe</button> -->
             </form>
         </div>
     </div>
