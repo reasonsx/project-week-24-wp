@@ -289,7 +289,7 @@ ul {
     align-items: flex-start;
     box-sizing: border-box;
     overflow: hidden;
-    height: 480px;
+    height: 600px;
 }
 .back-content-box img {
     object-fit: cover;
