@@ -124,10 +124,10 @@ ul {
     object-position: center;
 } */
 .language:nth-child(1) {
-    background: url(/css/img/uk-flag.svg) lightgray 50% / cover no-repeat;
+    background: url(/css/img/uk-flag.svg) cover no-repeat;
 }
 .language:nth-child(2) {
-    background: url(/css/img/dk-flag.svg) lightgray 50% / cover no-repeat;
+    background: url(/css/img/dk-flag.svg) cover no-repeat;
 }
 .hero-section {
     display: flex;
