@@ -626,11 +626,6 @@ footer {
         justify-content: center;
         align-items: start;
     }
-    .to-do
-    {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-    }
+
     
 }
