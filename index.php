@@ -163,10 +163,13 @@
 <section id="newsletter">
     <div class="newsletter-section">
         <div class="newsletter-container">
+            <!-- <h3>STAY UPDATED</h3>
+            <p>Sign up to our newsletter and hear about the big ideas and new campaigns, taking place all around the
+                world, that are helping to drive progress towards the Global Goals.</p> -->
+            <div class="support-container">
             <h3>STAY UPDATED</h3>
             <p>Sign up to our newsletter and hear about the big ideas and new campaigns, taking place all around the
                 world, that are helping to drive progress towards the Global Goals.</p>
-            <div class="support-container">
                 <div class="support-box">
                     <?php echo do_shortcode('[contact-form-7 id="b2731b8" title="Newsletter"]') ?>
                 </div>
