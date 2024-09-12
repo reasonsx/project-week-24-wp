@@ -233,6 +233,17 @@ textarea {
     border-radius: 8px;
     resize: none;
 }
+.wpcf7-form-control-wrap {
+    border: none;
+}
+.wpcf7-submit {
+    display: block;
+    width: 278px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    margin: auto;
+}
 .support-box p:nth-child(6) {
     height: 32px;
 }

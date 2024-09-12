@@ -333,6 +333,7 @@ ul {
     align-items: center;
     padding: 24px;
 }
+
 .wpcf7-submit {
     background-color: var(--primary-color);
     color: var(--white-color);
