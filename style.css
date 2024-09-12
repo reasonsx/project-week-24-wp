@@ -325,7 +325,7 @@ ul {
     display: flex;
     flex-direction: column;
     width: 768px;
-    height: 380px;
+    height: auto;
     background-color: var(--primary-color);
     color: var(--white-color);
     border-radius: var(--primary-border-radius);
