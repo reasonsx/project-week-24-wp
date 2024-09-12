@@ -15,7 +15,7 @@
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="languages">
             <div class="language"><img class="uk" src="<?php echo get_template_directory_uri(); ?>/css/img/uk-flag.svg"
@@ -160,9 +160,9 @@
         </div> -->
 
 </div>
-<section id="newsletter">
-    <div class="newsletter-section">
-        <div class="newsletter-container">
+<section id="contact">
+    <div class="support-section">
+        <div class="-big-support-container">
             <!-- <h3>STAY UPDATED</h3>
             <p>Sign up to our newsletter and hear about the big ideas and new campaigns, taking place all around the
                 world, that are helping to drive progress towards the Global Goals.</p> -->

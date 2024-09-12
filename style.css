@@ -310,7 +310,7 @@ ul {
     color: var(--white-color);
 }
 
-.newsletter-section {
+.support-section {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -321,7 +321,7 @@ ul {
     background-color: var(--primary-color);
 }
 
-.newsletter-container {
+.big-support-container {
     display: flex;
     flex-direction: column;
     width: 768px;
@@ -333,12 +333,12 @@ ul {
     align-items: center;
     padding: 24px;
 }
-.newsletter-container button {
+.big-support-container button {
     background-color: var(--primary-color);
     color: var(--white-color);
     border: 2px solid var(--white-color);
 }
-.newsletter-container button:hover {
+.big-support-container button:hover {
     background-color: var(--white-color);
     color: var(--primary-color);
 }
