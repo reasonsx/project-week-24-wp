@@ -299,7 +299,7 @@ ul {
 .front-content-box {
     display: flex;
     flex-direction: column;
-    width: 768px;
+    width: auto;
     background-color: var(--primary-color);
     border-radius: var(--primary-border-radius);
     justify-content: center;
