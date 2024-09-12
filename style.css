@@ -589,6 +589,7 @@ footer {
         flex-direction: column;
         transition: none;
         height: auto;
+        margin-top: 50px;
     }
     .main-targets-container{
         width: 800px;
