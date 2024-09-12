@@ -110,7 +110,7 @@ ul {
     gap: 16px;
     margin-left: auto;
 }
-.lang-item-first {
+.languages a:nth-child(1) {
     width: 32px;
     height: 32px;
     border-radius: 16px;
