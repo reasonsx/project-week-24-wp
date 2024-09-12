@@ -553,7 +553,10 @@ footer {
 
 @media (max-width: 1024px){
     nav{
-        width: 1024px;
+        width: 800px;
+    }
+    .nav-links{
+        padding-left: 10px;
     }
     
 }
