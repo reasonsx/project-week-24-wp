@@ -584,4 +584,12 @@ footer {
         margin-top: 50px;
         margin-bottom: 50px;
     }
+    .main-targets-section{
+        display: flex;
+        flex-direction: column;
+        transition: none;
+    }
+    .main-targets-container{
+        width: 800px;
+    }
 }
