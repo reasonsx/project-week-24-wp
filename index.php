@@ -55,7 +55,7 @@
     <?php
         $targets = new WP_Query(array(
             'post_type' => 'target',
-            'posts_per_page' => 5
+            'posts_per_page' => 3
         )); ?>
 
         <?php if ($targets->have_posts()): ?>
@@ -69,6 +69,7 @@
             <?php wp_reset_postdata(); ?>
         <?php endif; ?>
     </div>
+    
 </div>
 
 <div class="things-to-do-section">
