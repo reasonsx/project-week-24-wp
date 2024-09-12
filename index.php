@@ -20,7 +20,7 @@
         <div class="languages">
             <div class="language"><img class="uk" src="<?php echo get_template_directory_uri(); ?>/css/img/uk-flag.svg"
                     alt=""></div>
-            <div class="language"></div>
+            <div class="language" style="background: url(/css/img/uk-flag.svg) lightgray 50% / cover no-repeat"></div>
         </div>
     </nav>
 </div>
