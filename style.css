@@ -221,7 +221,7 @@ ul {
     align-items: flex-start;
     box-sizing: border-box;
     /* background: url('img/hero-image.jpg'); */
-    height: 572px; /* Fixed height */
+    height: 572px;
     transition: width 0.3s ease;
 }
 
