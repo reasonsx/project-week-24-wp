@@ -557,7 +557,7 @@ footer {
 }
 
 @media (max-width: 1024px){
-    .nav-section{
+    nav{
         width: 1024px;
     }
     
