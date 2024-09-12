@@ -110,7 +110,7 @@ ul {
     gap: 16px;
     margin-left: auto;
 }
-.languages a:nth-child(1) {
+.language-uk {
     width: 32px;
     height: 32px;
     border-radius: 16px;
@@ -568,28 +568,6 @@ footer {
         font-size: 14px;
     }
     .about-container{
-        width: 800px;
-        height: 300px;
-    }
-    .about-pic1{
-        width: 30%;
-    }
-    .about-text{
-        width: 40%;
-    }
-    .about-pic2{
-        width: 30%;
-    }
-    .about-section{
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .main-targets-section{
-        display: flex;
-        flex-direction: column;
-        transition: none;
-    }
-    .main-targets-container{
         width: 800px;
     }
 }
