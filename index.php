@@ -19,7 +19,7 @@
         </ul>
         <div class="languages">
         <?php pll_the_languages(); ?>
-            <div class="language-uk"></div>
+            <div class="language-uk lang-item-first"></div>
             <div class="language-dk"></div>
         </div>
     </nav>
