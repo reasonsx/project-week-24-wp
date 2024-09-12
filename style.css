@@ -646,8 +646,11 @@ footer {
         margin: 0 8px;
     }
     nav h4{
-        font-size: 14px;
+        font-size: 12px;
         margin: 0 8px;
+    }
+    .nav-links{
+        display: none;
     }
     h3{
         font-size: 20px;
