@@ -596,5 +596,21 @@ footer {
         flex-direction: column;
         transition: none;
         height: auto;
+        margin: 0;
+    }
+    .target{
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Expand the hovered target */
+    .target:hover {
+        width: 100%; /* Expanded width */
+        z-index: 1; /* Ensure it stays on top of other elements */
+    }
+    
+    /* Reduce width of other targets when one is hovered */
+    .main-targets-container:hover .target:not(:hover) {
+        width: 100%; /* Reduced width for non-hovered targets */
     }
 }
