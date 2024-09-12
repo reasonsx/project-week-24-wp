@@ -111,8 +111,6 @@ ul {
     margin-left: auto;
 }
 .language {
-    width: 32px;
-    height: 32px;
     border-radius: 16px;
     background-color: var(--white-color);
     overflow: hidden;
@@ -120,9 +118,13 @@ ul {
 .language-uk {
     width: 32px;
     height: 32px;
+    border-radius: 16px;
     background: url(./css/img/uk-flag.svg) 50% / cover no-repeat;
 }
 .language-dk {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
     background: url(./css/img/dk-flag.svg) 50% / cover no-repeat;
 }
 .hero-section {
