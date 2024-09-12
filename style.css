@@ -624,7 +624,14 @@ footer {
         flex-direction: column;
         width: 800px;
         justify-content: center;
-        align-items: flex-end;
+        align-items: start;
+    }
+    .to-do
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
     }
     
 }
