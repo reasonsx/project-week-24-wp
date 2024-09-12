@@ -118,6 +118,8 @@ ul {
     overflow: hidden;
 }
 .language:nth-child(1) {
+    width: 70px;
+    height: 70px;
     background: url(./css/img/uk-flag.svg) 50% / cover no-repeat;
 }
 .language:nth-child(2) {
