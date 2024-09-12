@@ -555,5 +555,8 @@ footer {
     nav{
         width: 800px;
     }
+    .nav-links{
+        padding-left: 10px;
+    }
     
 }
