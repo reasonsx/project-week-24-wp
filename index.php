@@ -206,6 +206,7 @@
     .wpcf7-form-control, .wpcf7-text, .wpcf7-validates-as-required {
         border: none;
         background-color: white;
+        color: #00668c;
     }
 </style>
 <?php get_footer(); ?>
