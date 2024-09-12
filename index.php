@@ -217,7 +217,6 @@
     height: auto;
     padding: 16px;
     margin: 0 auto;
-    background-color: white;
     border-radius: 24px;
 }
 .support-box p {
