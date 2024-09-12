@@ -629,5 +629,8 @@ footer {
     .to-do{
         justify-content: start;
     }
+    .more-content-container{
+        width: 800px;
+    }
     
 }

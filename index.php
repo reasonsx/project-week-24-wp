@@ -6,7 +6,8 @@
 <?php $targetsTitle = get_field('targets-title') ?>
 <?php $tipsTitle = get_field('tips-title') ?>
 <?php $cardsTitle = get_field('cards-title') ?>
-
+<?php $formTitle = get_field('form-title') ?>
+<?php $formText = get_field('form-text') ?>
 <div class="nav-section">
     <nav>
         <div class="logo">
@@ -167,9 +168,8 @@
             <p>Sign up to our newsletter and hear about the big ideas and new campaigns, taking place all around the
                 world, that are helping to drive progress towards the Global Goals.</p> -->
             <div class="support-container">
-                <h3>STAY UPDATED</h3>
-                <p>Sign up to our newsletter and hear about the big ideas and new campaigns, taking place all around the
-                    world, that are helping to drive progress towards the Global Goals.</p>
+                <h3><?php echo $formTitle ?></h3>
+                <p><?php echo $formText ?></p>
                 <div class="support-box">
                     <?php echo do_shortcode('[contact-form-7 id="b2731b8" title="Newsletter"]') ?>
                 </div>
