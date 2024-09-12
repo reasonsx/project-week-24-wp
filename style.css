@@ -527,7 +527,7 @@ textarea {
 .fb-icon {
     width: 70px;
     height: 70px;
-    background: url('./css/img/fb.svg')  50% / cover no-repeat;
+    background: url('./img/fb.svg')  50% / cover no-repeat;
 }
 .x-icon {
     width: 70px;
@@ -551,4 +551,67 @@ footer {
     justify-content: center;
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+
+@media (max-width: 1024px){
+    .nav-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        z-index: 2000000;
+    }
+    nav {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        background-color: var(--secondary-color);
+        width: 100%;
+        height: 64px;
+        border-radius: 32px;
+        margin: 16px auto;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+    nav a {
+        color: var(--white-color);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 16px;
+    }
+    nav a:hover {
+        border-bottom: 2px solid var(--white-color);
+    }
+    nav h4 {
+        color: var(--primary-color);
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 16px;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+    .languages {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        gap: 16px;
+        margin-left: auto;
+    }
+    .language {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        background-color: var(--white-color);
+        overflow: hidden;
+    }
+    
 }
