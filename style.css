@@ -588,8 +588,13 @@ footer {
         display: flex;
         flex-direction: column;
         transition: none;
+        height: auto;
     }
     .main-targets-container{
         width: 800px;
+        display: flex;
+        flex-direction: column;
+        transition: none;
+        height: auto;
     }
 }
