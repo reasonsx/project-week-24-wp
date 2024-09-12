@@ -18,7 +18,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="languages">
-            <div class="language"><img src="/css/img/uk-flag.svg" alt="">img</div>
+            <div class="language"><img src="/css/img/uk-flag.svg" alt=""></div>
             <div class="language"></div>
         </div>
     </nav>
