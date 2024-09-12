@@ -52,7 +52,7 @@
 <div class="main-targets-section">
     <h2><?php echo $targetsTitle ?></h2>
     <div class="main-targets-container">
-    <?php
+        <?php
         $targets = new WP_Query(array(
             'post_type' => 'target',
             'posts_per_page' => 3
@@ -61,16 +61,16 @@
         <?php if ($targets->have_posts()): ?>
             <?php while ($targets->have_posts()):
                 $targets->the_post(); ?>
-        <div class="target" style="background: url('<?php echo esc_url(get_field('target-image')["url"]); ?>')">
-            <h3><?php echo esc_html(get_field('target-title')); ?></h3>
-            <p><?php echo esc_html(get_field('target-text')); ?></p>
-        </div>
-        <?php endwhile; ?>
+                <div class="target" style="background: url('<?php echo esc_url(get_field('target-image')["url"]); ?>')">
+                    <h3><?php echo esc_html(get_field('target-title')); ?></h3>
+                    <p><?php echo esc_html(get_field('target-text')); ?></p>
+                </div>
+            <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
         <?php endif; ?>
-        
+
     </div>
-    
+
 </div>
 
 <div class="things-to-do-section">
@@ -124,7 +124,7 @@
             $cards->the_post(); ?>
             <div class="more-content-container">
                 <div class="back-content-box">
-                <img src="<?php echo esc_url(get_field('card-image')["url"]); ?>">
+                    <img src="<?php echo esc_url(get_field('card-image')["url"]); ?>">
                     <div class="front-content-box">
                         <h3><?php echo esc_html(get_field('card-title')); ?></h3>
                         <p><?php echo esc_html(get_field('card-text')); ?></p>
@@ -166,8 +166,14 @@
             <h3>STAY UPDATED</h3>
             <p>Sign up to our newsletter and hear about the big ideas and new campaigns, taking place all around the
                 world, that are helping to drive progress towards the Global Goals.</p>
-            <form action="">
-                <button class="main-button">Subscribe</button>
+            <div class="support-container">
+                <h1><?php pll_e('Contact us') ?></h1>
+                <div class="support-box">
+                    <!-- <h2>Contact us</h2> -->
+                    <?php echo do_shortcode('[contact-form-7 id="24ffb52" title="Support form"]') ?>
+                </div>
+            </div>
+            <button class="main-button">Subscribe</button>
             </form>
         </div>
     </div>
@@ -180,20 +186,68 @@
     .language:nth-child(2) {
         background: url(/css/img/dk-flag.svg) lightgray 50% / cover no-repeat;
     }
+
     .target {
-    position: relative;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        border-radius: var(--primary-border-radius);
+        justify-content: center;
+        padding: 24px;
+        justify-content: flex-end;
+        align-items: flex-start;
+        box-sizing: border-box;
+        /* background: url('<?php echo esc_url(get_field('target-image')["url"]); ?>'); */
+        height: 572px;
+        transition: width 0.3s ease;
+    }
+    .support-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--primary-color);
-    border-radius: var(--primary-border-radius);
-    justify-content: center;
-    padding: 24px;
-    justify-content: flex-end;
-    align-items: flex-start;
-    box-sizing: border-box;
-    /* background: url('<?php echo esc_url(get_field('target-image')["url"]); ?>'); */
-    height: 572px;
-    transition: width 0.3s ease;
+    justify-content: space-between;
+    width: 572px;
+    margin: 0 auto 160px auto;
+}
+.support-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 572px;
+    height: auto;
+    padding: 16px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 24px;
+}
+.support-box p {
+    height: auto;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    /* margin: 10px 0; */
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+}
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    resize: none;
+}
+.wpcf7-submit {
+    display: block;
+    background-color: var(--orange);
+    width: 278px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    margin: auto;
+}
+.support-box p:nth-child(6) {
+    height: 32px;
 }
 </style>
 <?php get_footer(); ?>
