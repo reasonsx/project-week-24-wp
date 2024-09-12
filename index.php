@@ -18,6 +18,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="languages">
+        <?php pll_the_languages(); ?>
             <div class="language-uk"></div>
             <div class="language-dk"></div>
         </div>
