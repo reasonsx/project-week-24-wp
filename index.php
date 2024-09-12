@@ -50,20 +50,24 @@
 </section>
 
 <div class="main-targets-section">
-    <h2><?php echo esc_html(get_field('target-title-main')); ?></h2>
+    <h2>TITLE HERE LATER!</h2>
     <div class="main-targets-container">
+    <?php
+        $targets = new WP_Query(array(
+            'post_type' => 'target',
+            'posts_per_page' => 5
+        )); ?>
+
+        <?php if ($targets->have_posts()): ?>
+            <?php while ($targets->have_posts()):
+                $targets->the_post(); ?>
         <div class="target">
-            <h3><?php echo esc_html(get_field('target-title-1')); ?></h3>
-            <p><?php echo esc_html(get_field('target-text-1')); ?></p>
+            <h3><?php echo esc_html(get_field('target-title')); ?></h3>
+            <p><?php echo esc_html(get_field('target-text')); ?></p>
         </div>
-        <div class="target">
-            <h3><?php echo esc_html(get_field('target-title-2')); ?></h3>
-            <p><?php echo esc_html(get_field('target-text-2')); ?></p>
-        </div>
-        <div class="target">
-            <h3><?php echo esc_html(get_field('target-title-3')); ?></h3>
-            <p><?php echo esc_html(get_field('target-text-3')); ?></p>
-        </div>
+        <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        <?php endif; ?>
     </div>
 </div>
 
@@ -184,7 +188,7 @@
     justify-content: flex-end;
     align-items: flex-start;
     box-sizing: border-box;
-    background: url('<?php echo esc_url(get_field('hero-image')["url"]); ?>');
+    background: url('<?php echo esc_url(get_field('target-image')["url"]); ?>');
     height: 572px;
     transition: width 0.3s ease;
 }
