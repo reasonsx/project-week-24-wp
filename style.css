@@ -641,6 +641,14 @@ footer {
     nav{
         width: 400px;
     }
+    nav a{
+        font-size: 12px;
+        margin: 0 8px;
+    }
+    nav h4{
+        font-size: 14px;
+        margin: 0 8px;
+    }
     h3{
         font-size: 20px;
     }
