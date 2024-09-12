@@ -118,10 +118,10 @@ ul {
     overflow: hidden;
 }
 .language:nth-child(1) {
-    background: url(./css/img/uk-flag.svg);
+    background: url(./css/img/uk-flag.svg) 50% / cover no-repeat;
 }
 .language:nth-child(2) {
-    background: url(./css/img/dk-flag.svg) cover no-repeat;
+    background: url(./css/img/dk-flag.svg) 50% / cover no-repeat;
 }
 .hero-section {
     display: flex;
