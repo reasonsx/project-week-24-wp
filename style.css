@@ -626,6 +626,8 @@ footer {
         justify-content: center;
         align-items: start;
     }
-
+    .to-do{
+        justify-content: start;
+    }
     
 }
