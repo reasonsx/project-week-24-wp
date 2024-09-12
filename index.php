@@ -127,8 +127,8 @@
                     <div class="front-content-box">
                         <h5><?php echo esc_html(get_field('card-title')); ?></h5>
                         <p><?php echo esc_html(get_field('card-text')); ?></p>
-                        <img src="<?php echo esc_html(get_field('card-image')); ?>" alt="">
                     </div>
+                    <img src="<?php echo esc_html(get_field('card-image')); ?>" alt="">
                 </div>
             </div>
         <?php endwhile; ?>
