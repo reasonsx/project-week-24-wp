@@ -13,13 +13,13 @@
             <h4><?php echo $heroText ?></h4>
         </div>
         <ul class="nav-links">
-            <li><a href="#"><?php pll_e("Home")?></a></li>
+        <li><a href="#"><?php pll_e("Home")?></a></li>
             <li><a href="#about"><?php pll_e("About")?></a></li>
             <li><a href="#contact"><?php pll_e("Contact")?></a></li>
         </ul>
         <div class="languages">
         <?php pll_the_languages(); ?>
-            <div class="language-uk lang-item-first"></div>
+            <div class="lang-item-first"></div>
             <div class="language-dk"></div>
         </div>
     </nav>
