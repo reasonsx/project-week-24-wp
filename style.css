@@ -281,7 +281,7 @@ ul {
 .back-content-box {
     display: flex;
     flex-direction: column;
-    width: 560px;
+    width: 1160px;
     background-color: var(--primary-color);
     border-radius: var(--primary-border-radius);
     justify-content: center;
@@ -294,7 +294,7 @@ ul {
 .front-content-box {
     display: flex;
     flex-direction: column;
-    width: 768px;
+    width: 900px;
     background-color: var(--primary-color);
     border-radius: var(--primary-border-radius);
     justify-content: center;
