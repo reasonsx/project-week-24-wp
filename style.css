@@ -288,7 +288,7 @@ ul {
     justify-content: flex-end;
     align-items: flex-start;
     box-sizing: border-box;
-    background-image: url('img/hero-image.jpg');
+    /* background-image: url('img/hero-image.jpg'); */
 }
 
 .front-content-box {
