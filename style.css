@@ -580,4 +580,8 @@ footer {
     .about-pic2{
         width: 30%;
     }
+    .about-section{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
