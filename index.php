@@ -61,13 +61,14 @@
         <?php if ($targets->have_posts()): ?>
             <?php while ($targets->have_posts()):
                 $targets->the_post(); ?>
-        <div class="target">
+        <div class="target" style="background: url('<?php echo esc_url(get_field('target-image')["url"]); ?>')">
             <h3><?php echo esc_html(get_field('target-title')); ?></h3>
             <p><?php echo esc_html(get_field('target-text')); ?></p>
         </div>
         <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
         <?php endif; ?>
+        
     </div>
     
 </div>
@@ -189,7 +190,7 @@
     justify-content: flex-end;
     align-items: flex-start;
     box-sizing: border-box;
-    background: url('<?php echo esc_url(get_field('target-image')["url"]); ?>');
+    /* background: url('<?php echo esc_url(get_field('target-image')["url"]); ?>'); */
     height: 572px;
     transition: width 0.3s ease;
 }
