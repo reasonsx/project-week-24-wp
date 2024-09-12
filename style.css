@@ -276,20 +276,20 @@ ul {
     grid-gap: 16px;
     width: 1160px;
     margin-top: 30px;
-    position: relative;
+    position: absolute;
 }
 
 .back-content-box {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 600;
     background-color: var(--primary-color);
     border-radius: var(--primary-border-radius);
     justify-content: center;
     justify-content: flex-end;
     align-items: flex-start;
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     right: 0;
     /* background-image: url('img/hero-image.jpg'); */
 }
