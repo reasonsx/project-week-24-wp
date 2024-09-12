@@ -619,5 +619,12 @@ footer {
     .target p {
         font-size: 14px;
     }
+    .things-to-do-container {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        justify-content: center;
+        align-items: center;
+    }
     
 }
