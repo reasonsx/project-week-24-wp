@@ -290,6 +290,15 @@ ul {
     box-sizing: border-box;
     /* background-image: url('img/hero-image.jpg'); */
 }
+.back-content-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
 .front-content-box {
     display: flex;
