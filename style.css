@@ -668,4 +668,20 @@ footer {
     .about-container{
         width: 400px;
     }
+    .img1{
+        width: 100px; 
+        height: 100px;
+    }
+    .img2{
+        width: 50px; 
+        height: 50px;
+    }
+    .img3{
+        width: 50px; 
+        height: 50px;
+    }
+    .img4{
+        width: 100px; 
+        height: 100px;
+    }
 }
