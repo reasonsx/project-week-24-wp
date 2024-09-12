@@ -203,5 +203,8 @@
         height: 572px;
         transition: width 0.3s ease;
     }
+    .wpcf7-form-control, .wpcf7-text, .wpcf7-validates-as-required {
+        border: none;
+    }
 </style>
 <?php get_footer(); ?>
