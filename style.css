@@ -525,7 +525,7 @@ textarea {
 .fb-icon {
     width: 70px;
     height: 70px;
-    background: url('./img/fb.svg')  50% / cover no-repeat;
+    background: url('./css/img/fb.svg')  50% / cover no-repeat;
 }
 .x-icon {
     width: 70px;
