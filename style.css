@@ -693,10 +693,23 @@ footer {
     }
     .more-content-container{
         width: 400px;
-        height: 500px;
+        height: 300px;
     }
     .back-content-box{
         width: 400px;
-        height: 500px;
+        height: 300px;
+    }
+
+
+    .big-support-container {
+        width: 400px;
+    }
+    
+    .support-container {
+        width: 400px;
+    }
+    
+    .support-box {
+        width: 400px;
     }
 }
