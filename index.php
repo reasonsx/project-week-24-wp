@@ -170,7 +170,7 @@
                 <h1><?php pll_e('Contact us') ?></h1>
                 <div class="support-box">
                     <!-- <h2>Contact us</h2> -->
-                    <?php echo do_shortcode('[contact-form-7 id="24ffb52" title="Support form"]') ?>
+                    <?php echo do_shortcode('[contact-form-7 id="b2731b8" title="Newsletter"]') ?>
                 </div>
             </div>
             <button class="main-button">Subscribe</button>
