@@ -117,12 +117,7 @@ ul {
     background-color: var(--white-color);
     overflow: hidden;
 }
-/* .uk {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-} */
+
 .language:nth-child(1) {
     background: url(/css/img/uk-flag.svg) cover no-repeat;
 }
