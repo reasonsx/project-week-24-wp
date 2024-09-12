@@ -276,25 +276,28 @@ ul {
     grid-gap: 16px;
     width: 1160px;
     margin-top: 30px;
+    position: relative;
 }
 
 .back-content-box {
     display: flex;
     flex-direction: column;
-    width: 1160px;
+    width: 600;
     background-color: var(--primary-color);
     border-radius: var(--primary-border-radius);
     justify-content: center;
     justify-content: flex-end;
     align-items: flex-start;
     box-sizing: border-box;
+    position: absolute;
+    right: 0;
     /* background-image: url('img/hero-image.jpg'); */
 }
 
 .front-content-box {
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: 768px;
     background-color: var(--primary-color);
     border-radius: var(--primary-border-radius);
     justify-content: center;
