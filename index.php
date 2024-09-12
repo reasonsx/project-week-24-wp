@@ -216,7 +216,6 @@
     justify-content: space-between;
     width: 572px;
     height: auto;
-    padding: 16px;
     margin: 0 auto;
     border-radius: 24px;
 }
