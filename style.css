@@ -288,12 +288,12 @@ ul {
     justify-content: flex-end;
     align-items: flex-start;
     box-sizing: border-box;
-    /* background-image: url('img/hero-image.jpg'); */
     overflow: hidden;
     height: 480px;
 }
 .back-content-box img {
     object-fit: cover;
+    width: 100%;
 }
 
 .front-content-box {
