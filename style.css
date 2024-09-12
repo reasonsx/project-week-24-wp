@@ -531,7 +531,7 @@ textarea {
 .x-icon {
     width: 70px;
     height: 70px;
-    background: url('.css/img/x.svg')  50% / cover no-repeat;
+    background: url('./css/img/x.svg')  50% / cover no-repeat;
 }
 
 .social-media{
