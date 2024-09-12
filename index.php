@@ -167,9 +167,7 @@
             <p>Sign up to our newsletter and hear about the big ideas and new campaigns, taking place all around the
                 world, that are helping to drive progress towards the Global Goals.</p>
             <div class="support-container">
-                <h1><?php pll_e('Contact us') ?></h1>
                 <div class="support-box">
-                    <!-- <h2>Contact us</h2> -->
                     <?php echo do_shortcode('[contact-form-7 id="b2731b8" title="Newsletter"]') ?>
                 </div>
             </div>
