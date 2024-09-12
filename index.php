@@ -184,7 +184,7 @@
     justify-content: flex-end;
     align-items: flex-start;
     box-sizing: border-box;
-    background: url('img/hero-image.jpg');
+    background: url('<?php echo esc_url(get_field('hero-image')["url"]); ?>');
     height: 572px;
     transition: width 0.3s ease;
 }
