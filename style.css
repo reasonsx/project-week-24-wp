@@ -562,9 +562,12 @@ footer {
         font-size: 32px;
     }
     .hero-section{
-        font-size: 44px;
+        font-size: 40px;
     }
     p{
         font-size: 14px;
+    }
+    .about-container{
+        width: 800px;
     }
 }
