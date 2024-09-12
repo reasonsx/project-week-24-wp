@@ -173,5 +173,20 @@
     .language:nth-child(2) {
         background: url(/css/img/dk-flag.svg) lightgray 50% / cover no-repeat;
     }
+    .target {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    border-radius: var(--primary-border-radius);
+    justify-content: center;
+    padding: 24px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    box-sizing: border-box;
+    background: url('img/hero-image.jpg');
+    height: 572px;
+    transition: width 0.3s ease;
+}
 </style>
 <?php get_footer(); ?>

@@ -212,7 +212,7 @@ ul {
     margin-top: 20px;
 }
 
-.target {
+/* .target {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -223,10 +223,10 @@ ul {
     justify-content: flex-end;
     align-items: flex-start;
     box-sizing: border-box;
-    /* background: url('img/hero-image.jpg'); */
+    background: url('img/hero-image.jpg');
     height: 572px;
     transition: width 0.3s ease;
-}
+} */
 
 /* Default width for target elements */
 .target {
