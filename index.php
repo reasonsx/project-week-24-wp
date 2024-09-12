@@ -18,9 +18,9 @@
             <li><a href="#contact"><?php pll_e("Contact")?></a></li>
         </ul>
         <div class="languages">
-            <div class="language"><img class="uk" src="<?php echo get_template_directory_uri(); ?>/css/img/uk-flag.svg"
-                    alt=""></div>
-            <div class="language"></div>
+        <?php pll_the_languages(); ?>
+            <div class="language-uk lang-item-first"></div>
+            <div class="language-dk"></div>
         </div>
     </nav>
 </div>

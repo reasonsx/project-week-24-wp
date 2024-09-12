@@ -110,25 +110,18 @@ ul {
     gap: 16px;
     margin-left: auto;
 }
-.language {
+.language-uk {
     width: 32px;
     height: 32px;
     border-radius: 16px;
-    background-color: var(--white-color);
-    overflow: hidden;
+    background: url(./css/img/uk-flag.svg) 50% / cover no-repeat;
 }
-/* .uk {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-} */
-/* .language:nth-child(1) {
-    background: url(/css/img/uk-flag.svg) lightgray 50% / cover no-repeat;
+.language-dk {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background: url(./css/img/dk-flag.svg) 50% / cover no-repeat;
 }
-.language:nth-child(2) {
-    background: url(/css/img/dk-flag.svg) lightgray 50% / cover no-repeat;
-} */
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -532,12 +525,12 @@ textarea {
 .fb-icon {
     width: 70px;
     height: 70px;
-    background: url('./img/fb.svg')  50% / cover no-repeat;
+    background: url('./css/img/fb.svg')  50% / cover no-repeat;
 }
 .x-icon {
     width: 70px;
     height: 70px;
-    background: url('./img/x.svg')  50% / cover no-repeat;
+    background: url('./css/img/x.svg')  50% / cover no-repeat;
 }
 
 .social-media{
@@ -556,4 +549,26 @@ footer {
     justify-content: center;
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+
+@media (max-width: 1024px){
+    nav{
+        width: 800px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .hero-section{
+        font-size: 40px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .about-container{
+        width: 800px;
+        height: 400px;
+    }
 }
