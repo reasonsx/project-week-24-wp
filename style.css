@@ -528,7 +528,7 @@ textarea {
 .fb-icon {
     width: 70px;
     height: 70px;
-    background: url('./css/img/fb.svg')  50% / cover no-repeat;
+    background: url('./img/fb.svg')  50% / cover no-repeat;
 }
 .x-icon {
     width: 70px;
@@ -552,4 +552,11 @@ footer {
     justify-content: center;
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+
+@media (max-width: 1024px){
+    .nav{
+        width: 1024px;
+    }
+    
 }
