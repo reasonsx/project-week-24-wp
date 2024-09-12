@@ -289,9 +289,10 @@ ul {
     align-items: flex-start;
     box-sizing: border-box;
     /* background-image: url('img/hero-image.jpg'); */
+    overflow: hidden;
 }
 .back-content-box img {
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .front-content-box {
