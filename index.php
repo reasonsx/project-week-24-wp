@@ -126,7 +126,7 @@
                 <div class="back-content-box">
                 <img src="<?php echo esc_url(get_field('card-image')["url"]); ?>">
                     <div class="front-content-box">
-                        <h5><?php echo esc_html(get_field('card-title')); ?></h5>
+                        <h3><?php echo esc_html(get_field('card-title')); ?></h3>
                         <p><?php echo esc_html(get_field('card-text')); ?></p>
                     </div>
                 </div>
