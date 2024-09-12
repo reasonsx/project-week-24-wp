@@ -636,3 +636,21 @@ footer {
         width: 800px;
     }
 }
+
+@media (max-width: 576px){
+    nav{
+        width: 350px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    .hero-section{
+        font-size: 30px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
