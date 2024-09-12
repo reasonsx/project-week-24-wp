@@ -123,7 +123,7 @@
         <?php while ($cards->have_posts()):
             $cards->the_post(); ?>
             <div class="more-content-container">
-                <div class="back-content-box" style="background: url('<?php echo esc_url(get_field('card-image')["url"]); ?>')">
+                <div class="back-content-box" style="background: url('<?php echo esc_url(get_field('target-image')["url"]); ?>')">
                     <div class="front-content-box">
                         <h5><?php echo esc_html(get_field('card-title')); ?></h5>
                         <p><?php echo esc_html(get_field('card-text')); ?></p>
