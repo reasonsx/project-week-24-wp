@@ -290,6 +290,7 @@ ul {
     box-sizing: border-box;
     /* background-image: url('img/hero-image.jpg'); */
     overflow: hidden;
+    height: 480px;
 }
 .back-content-box img {
     object-fit: cover;
