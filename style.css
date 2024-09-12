@@ -684,4 +684,7 @@ footer {
         width: 100px; 
         height: 100px;
     }
+    .main-targets-container{
+        width: 400px;
+    }
 }
