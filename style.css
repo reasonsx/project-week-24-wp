@@ -333,12 +333,12 @@ ul {
     align-items: center;
     padding: 24px;
 }
-.big-support-container button {
+.wpcf7-submit {
     background-color: var(--primary-color);
     color: var(--white-color);
     border: 2px solid var(--white-color);
 }
-.big-support-container button:hover {
+.wpcf7-submit:hover {
     background-color: var(--white-color);
     color: var(--primary-color);
 }

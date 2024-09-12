@@ -225,20 +225,16 @@
 input {
     width: 100%;
     padding: 8px;
-    /* margin: 10px 0; */
-    border: 1px solid var(--gray);
     border-radius: 8px;
 }
 textarea {
     width: 100%;
     padding: 8px;
-    border: 1px solid var(--gray);
     border-radius: 8px;
     resize: none;
 }
 .wpcf7-submit {
     display: block;
-    background-color: var(--orange);
     width: 278px;
     border: none;
     border-radius: 24px;
