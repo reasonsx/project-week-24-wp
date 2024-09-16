@@ -232,6 +232,9 @@ ul {
 .target {
     width: 376px;
 }
+.target img {
+    filter: brightness(50%);
+}
 
 /* Expand the hovered target */
 .target:hover {
