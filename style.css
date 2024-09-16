@@ -110,7 +110,7 @@ ul {
     gap: 16px;
     margin-left: auto;
 }
-.languages a:nth-child(1) {
+/* .languages a:nth-child(1) {
     width: 32px;
     height: 32px;
     border-radius: 16px;
@@ -121,13 +121,13 @@ ul {
     height: 32px;
     border-radius: 16px;
     background: url(./css/img/dk-flag.svg) 50% / cover no-repeat;
-}
-.language-dk {
+} */
+/* .language-dk {
     width: 32px;
     height: 32px;
     border-radius: 16px;
     background: url(./css/img/dk-flag.svg) 50% / cover no-repeat;
-}
+} */
 .hero-section {
     display: flex;
     flex-direction: column;
