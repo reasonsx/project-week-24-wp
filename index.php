@@ -19,7 +19,7 @@
             <li><a href="#contact"><?php pll_e("Contact")?></a></li>
         </ul>
         <div class="languages">
-        <?php pll_the_languages(); ?>
+        <?php echo pll_the_languages(array( 'dropdown' => 1 )); ?>
             <!-- <div class="language-uk"></div>
             <div class="language-dk"></div> -->
         </div>
