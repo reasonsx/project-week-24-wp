@@ -116,6 +116,12 @@ ul {
     border-radius: 16px;
     background: url(./css/img/uk-flag.svg) 50% / cover no-repeat;
 }
+.languages a:nth-child(2) {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background: url(./css/img/dk-flag.svg) 50% / cover no-repeat;
+}
 .language-dk {
     width: 32px;
     height: 32px;
