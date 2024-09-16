@@ -101,7 +101,7 @@ ul {
     align-items: center;
     list-style-type: none;
 }
-/* .languages {
+.languages {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -109,7 +109,7 @@ ul {
     list-style-type: none;
     gap: 16px;
     margin-left: auto;
-} */
+}
 
 /* .languages a:nth-child(1) {
     width: 32px;
