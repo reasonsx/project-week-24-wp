@@ -19,7 +19,12 @@
             <li><a href="#contact"><?php pll_e("Contact")?></a></li>
         </ul>
         <div class="languages">
-        <?php echo pll_the_languages(array( 'dropdown' => 1 )); ?>
+        <?php
+        pll_the_languages(array(
+            'show_flags' => 0, // This disables Polylang's default flags, so we can use custom CSS flags.
+            'hide_if_empty' => 0, 
+        )); 
+        ?>
             <!-- <div class="language-uk"></div>
             <div class="language-dk"></div> -->
         </div>

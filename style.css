@@ -101,7 +101,33 @@ ul {
     align-items: center;
     list-style-type: none;
 }
-.languages {
+.languages a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    text-indent: -9999px; /* Hides the text */
+    margin-right: 8px; /* Adds space between flags */
+}
+
+/* Add specific flags for each language */
+.languages a:nth-child(1) {
+    background-image: url('./css/img/uk-flag.svg'); /* UK flag for English */
+}
+
+.languages a:nth-child(2) {
+    background-image: url('./css/img/dk-flag.svg'); /* Denmark flag for Danish */
+}
+
+/* Adjust hover or focus states if needed */
+.languages a:hover {
+    opacity: 0.8;
+}
+
+
+/* .languages {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -109,7 +135,8 @@ ul {
     list-style-type: none;
     gap: 16px;
     margin-left: auto;
-}
+} */
+
 /* .languages a:nth-child(1) {
     width: 32px;
     height: 32px;
