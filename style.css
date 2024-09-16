@@ -232,7 +232,7 @@ ul {
 .target {
     width: 376px;
 }
-.back-content-box img {
+.target img {
     filter: brightness(50%);
 }
 
