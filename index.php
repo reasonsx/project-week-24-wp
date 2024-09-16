@@ -19,7 +19,16 @@
             <li><a href="#contact"><?php pll_e("Contact")?></a></li>
         </ul>
         <div class="languages">
-        <?php pll_the_languages(); ?>
+        <?php
+$languages = pll_the_languages(['raw' => 1]);
+if ($languages) {
+    echo '<ul>';
+    foreach ($languages as $lang) {
+        echo '<li><a href="' . esc_url($lang['url']) . '"><img src="' . esc_url($lang['flag']) . '" alt="' . esc_attr($lang['name']) . ' flag"> ' . esc_html($lang['name']) . '</a></li>';
+    }
+    echo '</ul>';
+}
+?>
         </div>
     </nav>
 </div>
@@ -133,38 +142,11 @@
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
     <?php endif; ?>
-    <!-- <div class="more-content-container">
-            <div class="back-content-box">
-                <div class="front-content-box">
-                    <p>Individual Actions <br>
-                        Everyone can contribute to ocean sustainability. Simple actions such as reducing plastic
-                        consumption, choosing sustainable seafood, and decreasing your carbon footprint can have
-                        significant impacts. Educate yourself and others about the importance of healthy oceans and the
-                        steps we can take to preserve them. <br>
-                        <br>
-                        Community Initiatives<br>
-                        Communities around the world are taking action to protect life below water. Programs like
-                        community-led beach clean-ups, local sustainable fishing practices, and coastal habitat
-                        restoration projects are pivotal. Engage with local organizations and participate in community
-                        efforts to support ocean health.<br>
-                        <br>
-                        Business Contributions<br>
-                        Businesses play a crucial role in promoting ocean sustainability. Companies can adopt
-                        sustainable practices by reducing plastic packaging, ensuring responsible sourcing of marine
-                        products, and investing in clean energy. Businesses can also support marine conservation
-                        initiatives financially and through corporate social responsibility (CSR) programs.
-                    </p>
-                </div>
-            </div>
-        </div> -->
 
 </div>
 <section id="contact">
     <div class="support-section">
         <div class="-big-support-container">
-            <!-- <h3>STAY UPDATED</h3>
-            <p>Sign up to our newsletter and hear about the big ideas and new campaigns, taking place all around the
-                world, that are helping to drive progress towards the Global Goals.</p> -->
             <div class="support-container">
                 <h3><?php echo $formTitle ?></h3>
                 <p><?php echo $formText ?></p>
@@ -172,7 +154,6 @@
                     <?php echo do_shortcode('[contact-form-7 id="b2731b8" title="Newsletter"]') ?>
                 </div>
             </div>
-            <!-- <button class="main-button">Subscribe</button> -->
             </form>
         </div>
     </div>
