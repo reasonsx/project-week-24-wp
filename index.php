@@ -8,6 +8,7 @@
 <?php $cardsTitle = get_field('cards-title') ?>
 <?php $formTitle = get_field('form-title') ?>
 <?php $formText = get_field('form-text') ?>
+<?php $cardImage = get_field('card-image') ?>
 <header>
 <div class="nav-section">
     <nav>
@@ -136,7 +137,7 @@
             $cards->the_post(); ?>
             <div class="more-content-container">
                 <div class="back-content-box">
-                    <img src="<?php echo esc_url(get_field('card-image')["url"]); ?>">
+                    <img src="<?php echo $cardImage ?>" alt="<?php echo $cardImage["alt"]?>">
                     <div class="front-content-box">
                         <h3><?php echo esc_html(get_field('card-title')); ?></h3>
                         <p><?php echo esc_html(get_field('card-text')); ?></p>
