@@ -46,7 +46,7 @@
         <h2><?php echo $aboutTitle ?></h2>
         <div class="about-container">
             <div class="about-pic1">
-                <img src="<?php echo esc_url(get_field('about-image-1')["url"]); ?>" alt="" class="img1">
+                <img src="<?php echo esc_url(get_field('about-image-1')["sizes"]["thumbnail"]); ?>" alt="" class="img1">
                 <img src="<?php echo esc_url(get_field('about-image-2')["url"]); ?>" alt="" class="img2">
             </div>
             <div class="about-text">
