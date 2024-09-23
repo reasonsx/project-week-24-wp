@@ -8,7 +8,6 @@
 <?php $cardsTitle = get_field('cards-title') ?>
 <?php $formTitle = get_field('form-title') ?>
 <?php $formText = get_field('form-text') ?>
-<?php $cardImage = get_field('card-image') ?>
 <header>
     <div class="nav-section">
         <nav>
@@ -135,6 +134,7 @@
     <?php if ($cards->have_posts()): ?>
         <?php while ($cards->have_posts()):
             $cards->the_post(); ?>
+            <?php $cardImage = get_field('card-image') ?>
             <div class="more-content-container">
                 <div class="back-content-box">
                     <img src="<?php echo $cardImage["url"]; ?>" alt="<?php echo $cardImage["alt"]; ?>">
