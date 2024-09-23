@@ -14,21 +14,21 @@
             <h4><?php echo $heroText ?></h4>
         </div>
         <ul class="nav-links">
-            <li><a href="#"><?php pll_e("Home")?></a></li>
-            <li><a href="#about"><?php pll_e("About")?></a></li>
-            <li><a href="#contact"><?php pll_e("Contact")?></a></li>
+            <li><a href="#"><?php pll_e("Home") ?></a></li>
+            <li><a href="#about"><?php pll_e("About") ?></a></li>
+            <li><a href="#contact"><?php pll_e("Contact") ?></a></li>
         </ul>
         <div class="languages">
-        <?php
-$languages = pll_the_languages(['raw' => 1]);
-if ($languages) {
-    echo '<ul>';
-    foreach ($languages as $lang) {
-        echo '<li><a href="' . esc_url($lang['url']) . '"><img src="' . esc_url($lang['flag']) . '" alt="' . esc_attr($lang['name']) . ' flag"> ' . esc_html($lang['name']) . '</a></li>';
-    }
-    echo '</ul>';
-}
-?>
+            <?php
+            $languages = pll_the_languages(['raw' => 1]);
+            if ($languages) {
+                echo '<ul>';
+                foreach ($languages as $lang) {
+                    echo '<li><a href="' . esc_url($lang['url']) . '"><img src="' . esc_url($lang['flag']) . '" alt="' . esc_attr($lang['name']) . ' flag"> ' . esc_html($lang['name']) . '</a></li>';
+                }
+                echo '</ul>';
+            }
+            ?>
         </div>
     </nav>
 </div>
@@ -182,7 +182,10 @@ if ($languages) {
         height: 572px;
         transition: width 0.3s ease;
     }
-    .wpcf7-form-control, .wpcf7-text, .wpcf7-validates-as-required {
+
+    .wpcf7-form-control,
+    .wpcf7-text,
+    .wpcf7-validates-as-required {
         border: none;
         background-color: white;
         color: #00668c;
