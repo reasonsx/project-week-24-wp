@@ -8,6 +8,7 @@
 <?php $cardsTitle = get_field('cards-title') ?>
 <?php $formTitle = get_field('form-title') ?>
 <?php $formText = get_field('form-text') ?>
+<header>
 <div class="nav-section">
     <nav>
         <div class="logo">
@@ -32,11 +33,14 @@
         </div>
     </nav>
 </div>
+</header>
+<main>
 <div class="hero-section">
     <h1><?php echo $heroText ?></h1>
     <img src="<?php echo esc_url(get_field('hero-image')["url"]); ?>" alt="" class="hero-image">
 
 </div>
+</main>
 <section id="about">
     <div class="about-section" id="about">
         <h2><?php echo $aboutTitle ?></h2>
