@@ -25,6 +25,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+header {
+    z-index: 999999;
+}
 
 h3 {
     font-size: 32px;
