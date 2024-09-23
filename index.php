@@ -10,37 +10,37 @@
 <?php $formText = get_field('form-text') ?>
 <?php $cardImage = get_field('card-image') ?>
 <header>
-<div class="nav-section">
-    <nav>
-        <div class="logo">
-            <h4><?php echo $heroText ?></h4>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#"><?php pll_e("Home") ?></a></li>
-            <li><a href="#about"><?php pll_e("About") ?></a></li>
-            <li><a href="#contact"><?php pll_e("Contact") ?></a></li>
-        </ul>
-        <div class="languages">
-            <?php
-            $languages = pll_the_languages(['raw' => 1]);
-            if ($languages) {
-                echo '<ul>';
-                foreach ($languages as $lang) {
-                    echo '<li><a href="' . esc_url($lang['url']) . '"><img src="' . esc_url($lang['flag']) . '" alt="' . esc_attr($lang['name']) . ' flag"> ' . esc_html($lang['name']) . '</a></li>';
+    <div class="nav-section">
+        <nav>
+            <div class="logo">
+                <h4><?php echo $heroText ?></h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#"><?php pll_e("Home") ?></a></li>
+                <li><a href="#about"><?php pll_e("About") ?></a></li>
+                <li><a href="#contact"><?php pll_e("Contact") ?></a></li>
+            </ul>
+            <div class="languages">
+                <?php
+                $languages = pll_the_languages(['raw' => 1]);
+                if ($languages) {
+                    echo '<ul>';
+                    foreach ($languages as $lang) {
+                        echo '<li><a href="' . esc_url($lang['url']) . '"><img src="' . esc_url($lang['flag']) . '" alt="' . esc_attr($lang['name']) . ' flag"> ' . esc_html($lang['name']) . '</a></li>';
+                    }
+                    echo '</ul>';
                 }
-                echo '</ul>';
-            }
-            ?>
-        </div>
-    </nav>
-</div>
+                ?>
+            </div>
+        </nav>
+    </div>
 </header>
 <main>
-<div class="hero-section">
-    <h1><?php echo $heroText ?></h1>
-    <img src="<?php echo esc_url(get_field('hero-image')["url"]); ?>" alt="" class="hero-image">
+    <div class="hero-section">
+        <h1><?php echo $heroText ?></h1>
+        <img src="<?php echo esc_url(get_field('hero-image')["url"]); ?>" alt="" class="hero-image">
 
-</div>
+    </div>
 </main>
 <section id="about">
     <div class="about-section" id="about">
@@ -137,7 +137,7 @@
             $cards->the_post(); ?>
             <div class="more-content-container">
                 <div class="back-content-box">
-                <img src="<?php echo $cardImage['src']; ?>" alt="<?php echo $cardImage['alt']; ?>">
+                    <img src="<?php echo $cardImage; ?>" alt="<?php echo $cardImage["alt"]; ?>">
                     <div class="front-content-box">
                         <h3><?php echo esc_html(get_field('card-title')); ?></h3>
                         <p><?php echo esc_html(get_field('card-text')); ?></p>
